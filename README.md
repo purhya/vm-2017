@@ -1,6 +1,6 @@
 # vm-2017
 
-In 2017, I have used AngularJS and VueJS for a couple of years, but also met many problems. So I decided to implement a new library.
+In 2017, I have worked with AngularJS and VueJS for a couple of years, but also met many problems. So I decided to implement a new library.
 
 This library contains 4k lines of codes, and focus on component implementation. It successfully uses **Proxy APIs** to track object properties.
 
@@ -35,4 +35,6 @@ There are still many problems with this library, e.g.:
 
 - Needs to compile template strings to functions in runtime, delays first paint.
 - The proxy based tracking affect performance much, and hard to debug.
-- Chooses tracking for dependencies per expression, not per component, so it can update smaller range each time after a few dependencies changed, but cause whole dependency map items explosive increase.
+- Easy to confuse target object and proxy object, which made me feel unsafe.
+- Too many proxy objects existing (even with GC) for complex apps.
+- Chooses tracking for dependencies per expression, not per component, so it can update smaller range each time after few dependencies changed, but cause whole dependency items increase much.
