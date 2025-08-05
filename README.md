@@ -1,8 +1,8 @@
 # vm-2017
 
-In 2017, I have worked with AngularJS and VueJS for a couple of years, but also met many problems. So I decided to implement a new library.
+In 2017, I have worked with AngularJS and VueJS for a couple of years, but also met many problems. So drawing from my experience I decided to implement a new library.
 
-This library contains 4k lines of codes, and focus on component implementation. It successfully uses **Proxy APIs** to track object properties.
+This library contains 4k lines of codes, and focus on component implementation. It uses **Proxy APIs** to track object properties.
 
 This library was used in a phone manager app, and some internal projects.
 
